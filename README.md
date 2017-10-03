@@ -21,6 +21,8 @@ To use S3, you will need to create a execution role with the correct permission.
 Lambda has the size limit for incoming payload, so I recommend to put your pdf files to a s3 bucket, 
 and just pass the bucket name and key to your Lambda function. You can use `S3.getObject` to retrieve the pdf file and save it to `/tmp`. Dont forget to remove the file at the end.
 
+- [Lambda Limits](http://docs.aws.amazon.com/lambda/latest/dg/limits.html)
+
 ## Update Function
 
 You will need to include the `node_modules` since Lambda will not build anything for you.
