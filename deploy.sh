@@ -1,6 +1,6 @@
 #!/bin/bash
 NAME=LAMBDA_FUNCION_NAME
-REGION=
+REGION=LAMBDA_REGION
 ZIP="../"$NAME".zip"
 echo $ZIP
 zip -r $ZIP ./

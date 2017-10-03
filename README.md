@@ -4,13 +4,13 @@
 
 ### Function Code
 
-- Code entry type: Upload a .ZIP file
-- Runtime: Node.js 6.10
-- Handler: index.handler
+- Code entry type: `Upload a .ZIP file`
+- Runtime: `Node.js 6.10`
+- Handler: `index.handler`
 
 ### Basic Settings
 
-It is always good to set the memory to 1536 MB(XD). Also remember to increase the timeout to 5 min.
+It is always good to set the memory to `1536 MB`(XD). Also remember to increase the timeout to `5 min`.
 
 ### Execution Role
 
@@ -22,6 +22,8 @@ Lambda has the size limit for incoming payload, so I recommend to put your pdf f
 and just pass the bucket name and key to your Lambda function. You can use `S3.getObject` to retrieve the pdf file and save it to `/tmp`. Dont forget to remove the file at the end.
 
 ## Update Function
+
+You will need to include the `node_modules` since Lambda will not build anything for you.
 
 `deploy.sh`
 
